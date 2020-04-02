@@ -1,3 +1,6 @@
 <resources>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name ="fab_12sp">12sp</dimen>
+    <dimen name="fab_16sp">16sp</dimen>
+    <dimen name ="fab_32sp">32sp</dimen>
 </resources>

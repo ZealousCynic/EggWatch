@@ -9,4 +9,18 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <!-- Custom strings below -->
+
+    <string name="s_entereggwatch">Velkommen til Æggeuret</string>
+    <string name="s_entereggwatch_buttontext">Start</string>
+
+    <string name="s_eggChoice">Vælg Æg</string>
+    <string name="s_soft">Blødkogt</string>
+    <string name="s_smiling">Smilende</string>
+    <string name="s_hardboiled">Hårdkogt</string>
+
+    <string name="s_eggtimertext">Timer mm:ss</string>
+    <string name="s_eggtimer">00:00</string>
+    <string name="s_GO">GO</string>
 </resources>
