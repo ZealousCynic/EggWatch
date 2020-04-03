@@ -1,4 +1,4 @@
-package com.EggWatch;
+package com.EggWatch.UI;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -8,6 +8,10 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
+
+import com.EggWatch.EggType;
+import com.EggWatch.R;
 
 public class EggView extends Fragment {
 
@@ -30,7 +34,9 @@ public class EggView extends Fragment {
                                                                {
                                                                    @Override
                                                                    public void onClick(View view) {
-                                                                       et = EggType.SOFT;                                                                   }
+                                                                       et = EggType.SOFT;
+                                                                       Log.d("ET", et.toString());
+                                                                   }
                                                                }
         );
     }

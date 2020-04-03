@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="com.EggWatch.FirstFragment"
+        android:name="com.EggWatch.UI.FirstFragment"
         android:label="@string/first_fragment_label"
         tools:layout="@layout/fragment_first">
 
@@ -16,12 +16,12 @@
             app:destination="@id/SecondFragment" />
 
         <action
-            android:id="@+id/action_FirstFragment_to_EggMain"
-            app:destination="@id/EggMain" />
+            android:id="@+id/action_FirstFragment_to_EggView"
+            app:destination="@id/EggView" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="com.EggWatch.SecondFragment"
+        android:name="com.EggWatch.UI.SecondFragment"
         android:label="@string/second_fragment_label"
         tools:layout="@layout/fragment_second">
 
@@ -31,14 +31,14 @@
     </fragment>
 
     <fragment
-        android:id="@+id/EggMain"
-        android:name="com.EggWatch.EggMain"
+        android:id="@+id/EggView"
+        android:name="com.EggWatch.UI.EggView"
         android:label="Egg Main"
         tools:layout="@layout/eggwatch_view"
         >
 
         <action
-            android:id="@+id/action_EggMain_to_FirstFragment"
+            android:id="@+id/action_EggView_to_FirstFragment"
             app:destination="@+id/FirstFragment"
             />
 
