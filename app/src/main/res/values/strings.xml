@@ -12,6 +12,8 @@
 
     <!-- Custom strings below -->
 
+    <string name="s_eggintro">Egg Intro</string>
+
     <string name="s_entereggwatch">Velkommen til Æggeuret</string>
     <string name="s_entereggwatch_buttontext">Start</string>
 

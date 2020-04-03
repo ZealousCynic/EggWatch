@@ -3,31 +3,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/EggIntro">
 
     <fragment
-        android:id="@+id/FirstFragment"
-        android:name="com.EggWatch.UI.FirstFragment"
-        android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
+        android:id="@+id/EggIntro"
+        android:name="com.EggWatch.UI.EggIntro"
+        android:label="@string/s_eggintro"
+        tools:layout="@layout/eggintro"
+        >
 
         <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
-
-        <action
-            android:id="@+id/action_FirstFragment_to_EggView"
+            android:id="@+id/action_EggIntro_to_EggView"
             app:destination="@id/EggView" />
-    </fragment>
-    <fragment
-        android:id="@+id/SecondFragment"
-        android:name="com.EggWatch.UI.SecondFragment"
-        android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
-
-        <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
     </fragment>
 
     <fragment
@@ -38,8 +25,8 @@
         >
 
         <action
-            android:id="@+id/action_EggView_to_FirstFragment"
-            app:destination="@+id/FirstFragment"
+            android:id="@+id/action_EggView_to_EggIntro"
+            app:destination="@+id/EggIntro"
             />
 
     </fragment>
