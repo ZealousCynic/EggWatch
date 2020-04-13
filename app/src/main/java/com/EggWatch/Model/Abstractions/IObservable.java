@@ -1,7 +1,8 @@
-package com.Model.Abstractions;
+package com.EggWatch.Model.Abstractions;
 
 public interface IObservable {
     void addObserver(IObserver observer);
     void removeObserver(IObserver observer);
-    void notifyOnPropertyChanged();
+    void notifyOnTimerChanged(int timeLeft);
+    void notifyOnTimerFinish();
 }

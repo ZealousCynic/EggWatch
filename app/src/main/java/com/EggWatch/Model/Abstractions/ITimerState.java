@@ -1,10 +1,6 @@
-package com.Model.Abstractions;
-
-import com.Model.Timer;
+package com.EggWatch.Model.Abstractions;
 
 public interface ITimerState {
-
-    Timer t = null;
 
     void start(int time);
     void stop();

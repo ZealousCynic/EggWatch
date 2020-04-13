@@ -11,9 +11,10 @@ import androidx.fragment.app.Fragment;
 import android.util.Log;
 
 import com.EggWatch.EggType;
+import com.EggWatch.Presenter.EggViewPresenter;
 import com.EggWatch.R;
 
-public class EggView extends Fragment {
+public class EggView extends Fragment implements EggViewPresenter.View {
 
     EggType et = EggType.NONE;
 
@@ -23,6 +24,8 @@ public class EggView extends Fragment {
             LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState
     ) {
+        EggViewPresenter presenter = new EggViewPresenter(this);
+
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.eggwatch_view, container, false);
     }

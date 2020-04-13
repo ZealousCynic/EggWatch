@@ -1,4 +1,4 @@
-package com.Model.Abstractions;
+package com.EggWatch.Model.Abstractions;
 
 public interface ITimer {
     void start();
